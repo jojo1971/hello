@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
@@ -7,20 +7,31 @@
 <body>
 
 <div>
-  <form>
-        <p><h3>Entrez votre texte puis validez</h3></p>
-    <textarea id="text"></textarea>
-    <p>
-        <button id="bout" onclick="alert(text.value)">Valider</button>
+<input id="text" type="text"/>
+    <input id="bout" type="button" value="cliquer"/>
+    <p id="contenu">
+        <span>vide</span>
     </p>
-  </form>
 </div>
 </body>
 <script>
-    var file = new ActiveXObject("Scripting.FileSystemObject");
-var a = file.CreateTextFile("c:\\testfile.txt", true);
-a.WriteLine("Salut cppFrance !");
-a.Close();
+var text = document.getElementById('text'),
+        bout = document.getElementById('bout'),
+        cont = document.getElementById('contenu');
+    bout.addEventListener('click', function(){
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'file1.txt');
+        xhr.addEventListener('readystatechange', function(){
+           if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
+
+               cont.innerHTML = '<span>'+ xhr.responseText+'<span>';
+           } else if(xhr.readyState === XMLHttpRequest.DONE && xhr.status != 200){
+               alert('erreur');
+           }
+        });
+        xhr.send(null);
+    });
+
 </script>
 
 </html>
