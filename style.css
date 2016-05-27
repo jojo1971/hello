@@ -1,10 +1,11 @@
 /*style.css*/
 body{
-    color: rgb(20,20,20);
-    background-color: gray;
-    margin: 0px;
-    font-family: 'Molengo', sans-serif;
-
+    margin: auto;
+    margin-top: 80px;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    width: 600px;
+    background-color: #F5F5F5;
 }
 h1{
     font-family: cursive;
