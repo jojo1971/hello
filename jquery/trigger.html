@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="juste.png" id="image">
+<span id="message"></span>
+<button>cliquer pour changer le texte</button>
+
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('#image').click(function(event, texte){
+           if(texte == undefined){
+               texte = 'par vous.';
+               $('#message').text('L\');
+           }
+       });
+    });
+</script>
+</body>
+</html>

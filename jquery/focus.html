@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" class="f" id="zone 1"/><br>
+<input type="text" class="f" id="zone 2"/><br>
+
+Focus : <span id="result1"></span><br>
+Perte focus : <span id="result2"></span>
+<script src="jquery.js"></script>
+<script>
+    $(function () {
+       $('.f').focus(function(){
+           $('#result1').text($(this).attr('id'));
+       }) ;
+       $('.f').blur(function () {
+           $('#result2').text($(this).attr('id'));
+       }) ;
+    });
+</script>
+</body>
+</html>

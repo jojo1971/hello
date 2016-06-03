@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sélecteurs CSS</title>
+  </head>
+  <body>
+    <img src="images1/i1.jpg" alt="monmoi">
+    <img src="images1/i2.jpg" alt="zerzr">
+    <img src="images1/i3.jpg" alt="resfsf">
+    
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        $('img').each(function(index){
+          this.src = 'images2/i' + (index+1) + '.jpg';
+        }).css('color', 'red');
+      }); 
+    </script>
+  </body>
+</html>

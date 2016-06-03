@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sélecteurs CSS</title>
+  </head>
+  <body>
+    <form>
+      Nom d'utilisateur
+      <input type="text" name="nom"><br />
+
+      Mot de passe
+      <input type="password" name="pass"><br />
+
+      Sexe
+      Homme <input type="radio" name="sexe" value="H">
+      Femme <input type="radio" name="sexe" value="F"><br />
+
+      Commentaires
+      <textarea rows="3" name="commentaires">Tapez vos commentaires ici</textarea><br />
+
+      <input type="image" src="aigle.jpg" height="200px"><br />
+
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Annuler">
+    </form> 
+
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        $(':input').css('background', 'yellow');
+          document.forms[0].pass.focus();
+          $(':focus').css('background','red');
+      }); 
+    </script>
+  </body>
+</html>

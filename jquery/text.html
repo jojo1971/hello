@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Valeurs stockées dans les éléments</title>
+  </head>
+  <body>
+    <h1>Documentation jQuery</h1>
+    <p><a href='http://docs.jquery.com'>Documentation officielle</a></p>
+    <p><a href='http://api.jquery.com'>API jQuery</a></p>
+    
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        alert($('p:last').text());
+          $('p').text(function(index,actuel){
+              alert('Paragraphe : '+(index+1)+' : '+actuel);
+          });
+          alert('voilà : '+$('a').html())
+      }); 
+    </script>
+  </body>
+</html>

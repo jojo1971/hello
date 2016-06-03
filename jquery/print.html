@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sélecteurs CSS</title>
+  </head>
+  <body>
+    <div id="listes">
+      <a href="http://api.jquery.com">API jQuery</a><br>
+      <a href="http://docs.jquery.com">Documentation jQuery</a><br>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        var test = $('a').attr('href');
+        document.write(test);
+      }); 
+    </script>
+  </body>
+</html>

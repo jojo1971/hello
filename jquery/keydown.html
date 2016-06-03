@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #lumiere{
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div id="lumiere"></div>
+<textarea id="target"></textarea>
+
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('#target').keydown(function(){
+           $('#lumiere').css('background-color','red');
+       });
+       $('#target').keyup(function(){
+           $('#lumiere').css('background-color','green');
+       });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Manipulation de l'attribut class</title>
+    <style type="text/css">
+      .rouge { color: red; }
+      .vert { color: green; }
+      .petit { font-size: 100%; }
+      .grand {font-size: 250%; }
+    </style>
+  </head>
+  <body>
+    <span id="jean" class="rouge grand">Jean</span>
+
+    <span id="pierre">Pierre</span>
+
+    <span id="paul" class="vert grand">Paul</span>
+
+    <span id="julia">Julia</span>
+
+    <span id="eric" class="vert">Eric</span>
+
+    <span id="kevin" >Kévin</span>
+
+    
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        $('#julia').addClass('rouge');
+        $('#eric').removeClass('vert').addClass('rouge');
+
+          if ($('#jean').hasClass('rouge'))
+            alert('le span #jean est de classe rouge');
+        else
+            alert('le span #jean n\'est pas de classe rouge');
+
+          if ($('#jean').is('.grand.rouge'))
+              alert('le span #jean est de classe grand et rouge');
+          else
+              alert('le span #jean n\'est pas de classe grand et/ou rouge');
+      }); 
+    </script>
+  </body>
+</html>

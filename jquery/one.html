@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="juste.png" id="image">
+<span id="result"></span>
+
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('#image').one('click', function(){
+           $('#result').text('Vous ne pouvez cliquez qu\'une seule fois ').fadeIn(1000).fadeOut(5000);
+       });
+    });
+</script>
+
+</body>
+</html>

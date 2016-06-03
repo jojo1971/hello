@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<span id="result"></span>
+
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $(window).resize(function(){
+           var taille = 'Taille de la fenêtre : '+$(window).width()+' px x '+
+                           $(window).height()+' px';
+      $('#result').text(taille);
+       });
+
+    });
+</script>
+</body>
+</html>

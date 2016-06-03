@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>Cliquer sur un bouton de la souris</h2>
+<img id="target" src="juste.png">
+<span id="rapport">rapport</span>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       $('#target').mousedown(function(e){
+           $('#rapport').html('Evènement : '+ e.type + 'Bouton pressé : '+ e.which);
+       });
+    });
+</script>
+</body>
+</html>

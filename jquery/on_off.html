@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<img src="juste.png" id="image">
+<button id="activer" value="Activer">Activer</button>
+<button id="desactiver" value="Desactiver">Déactiver</button>
+
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+       function traitement(){
+           alert('Image cliquée !');
+       }
+       $('#activer').on('click', function(){
+           $('#image').click(traitement);
+       });
+       $('#desactiver').on('click', function(){
+           $('#image').off('click',traitement);
+       });
+    });
+</script>
+</body>
+</html>

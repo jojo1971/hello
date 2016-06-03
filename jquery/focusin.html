@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<fieldset id="premier">
+    <legend>Premier</legend>
+    <input type="text" class="f" id="zone 1"/>
+    <input type="text" class="f" id="zone 2"/>
+</fieldset>
+<fieldset id="deuxieme">
+    <legend>Premier</legend>
+    <input type="text" class="f" id="zone 3"/>
+    <input type="text" class="f" id="zone 4"/>
+</fieldset>
+Focus : <span id="result1"></span>
+Perte focus : <span id="result2"></span>
+
+
+<script src="jquery.js"></script>
+
+<script>
+    $(function(){
+       $('.f').focusin(function(){
+           $('#result1').text($(this).attr('id'));
+       });
+        $('.f').focusout(function(){
+            $('#result2').text($(this).attr('id'));
+        });
+    });
+</script>
+</body>
+</html>

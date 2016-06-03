@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form>
+  Laissez aller votre imagination : saisissez quelques mots<br />
+  <textarea id="saisie"></textarea>
+</form><br />
+Caractère saisi : <span id="unelettre"></span><br>
+Et en string : <span id="string"></span>
+
+
+<script src="jquery.js"></script>
+<script>
+  $(function() {
+    $('#saisie').keypress(function(e) {
+      $('#unelettre').text(e.which);
+        var c = String.fromCharCode(e.which);
+      $('#string').text(c); //keyCode
+    });
+  });
+</script>
+
+</body>
+</html>
