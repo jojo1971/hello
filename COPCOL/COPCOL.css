@@ -1,0 +1,52 @@
+body {
+    background-color: darkgray;
+    margin: 20px;
+    display: inline-block;
+    float: inherit;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+
+form {
+    border: 2px solid rosybrown;
+    margin: 0 auto;
+    padding: 10px;
+    display: inline-block;
+    align-content: center;
+    width: 300px;
+
+}
+
+button {
+    border: 1px solid #000000;
+    background-color: #f5f5f5;
+    padding: 5px;
+    position: relative;
+
+    vertical-align: inherit;
+
+}
+
+.text {
+    height: 100px;
+    width: 200px;
+}
+
+.nom {
+    border-corner-image-transform: rotate;
+}
+
+.result {
+    display: inline-block;
+    color: red;
+
+}
+
+.afficher {
+    border: 2px solid rosybrown;
+    width: 300px;
+    height: 400px;
+
+}
