@@ -6,10 +6,17 @@ body {
     position: absolute;
     top: 10%;
     left: 10%;
+    opacity: 100;
+    text-align: center;
 
 }
 
+.nom {
+    margin: 10px;
+}
+
 form {
+    text-align: center;
     border: 2px solid rosybrown;
     margin: 0 auto;
     padding: 10px;
@@ -45,8 +52,14 @@ button {
 }
 
 .afficher {
+    margin: 10px;
     border: 2px solid rosybrown;
     width: 300px;
     height: 400px;
+    text-align: center;
 
+}
+
+h4 {
+    background-color: gray;
 }
